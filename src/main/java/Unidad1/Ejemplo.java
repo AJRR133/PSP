@@ -4,19 +4,21 @@ import java.io.IOException;
 
 public class Ejemplo {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		Runtime kernel = Runtime.getRuntime();
 		
 		System.out.println(kernel.totalMemory());
 		System.out.println(kernel.maxMemory());
 		System.out.println(kernel.freeMemory());
-		//String [] argumentos = {"Notepad","adios.txt"};
+		String [] argumentos = {"Notepad","adios.txt"};
 		System.out.println(kernel.availableProcessors());
-		String [] argumentos = {"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe","https://chatgpt.com/"};
+		//String [] argumentos = {"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe","https://chatgpt.com/"};
 		
 		try {
-			kernel.exec(argumentos);
+			Process proceso = kernel.exec(argumentos);
+			int codigoretorno = proceso.waitFor();
+			System.out.println("---"+codigoretorno );
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
