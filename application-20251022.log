@@ -1,0 +1,25 @@
+2025-10-22 09:14:05.058 [main] ERROR Unidad1.boletin2.Lanzadorsumaconruntime - error: file not found: C:\Users\alumno\Desktop\DAM\Proyectos Eclipse\PSP\src\main\java\Gestiona.java
+2025-10-22 09:14:05.061 [main] ERROR Unidad1.boletin2.Lanzadorsumaconruntime - Usage: javac <options> <source files>
+2025-10-22 09:14:05.061 [main] ERROR Unidad1.boletin2.Lanzadorsumaconruntime - use --help for a list of possible options
+2025-10-22 09:14:05.061 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 2
+2025-10-22 09:15:55.969 [main] ERROR Unidad1.boletin2.Lanzadorsumaconruntime - error: file not found: C:\Users\alumno\Desktop\sprint\PSP\src\main\java\Gestiona.java
+2025-10-22 09:15:55.971 [main] ERROR Unidad1.boletin2.Lanzadorsumaconruntime - Usage: javac <options> <source files>
+2025-10-22 09:15:55.971 [main] ERROR Unidad1.boletin2.Lanzadorsumaconruntime - use --help for a list of possible options
+2025-10-22 09:15:55.971 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 2
+2025-10-22 09:20:28.526 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:20:53.871 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:21:07.737 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:21:48.319 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:23:24.632 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:23:29.216 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:23:48.114 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:23:56.032 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:24:23.931 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:43:55.913 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:44:00.790 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:45:23.659 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:45:25.333 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:45:26.334 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0
+2025-10-22 09:45:30.916 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:46:37.439 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-22 09:46:40.818 [main] DEBUG Unidad1.boletin2.Lanzadorsumaconruntime - Código de salida: 0

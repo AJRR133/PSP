@@ -7,31 +7,21 @@ public class LanzadorCalculaSuma {
 
 	private static final Logger logger = LogManager.getLogger(LanzadorCalculaSuma.class);
 
-	private final static String directorioGenerarClasses = "C:\\Users\\alumno\\Desktop\\DAM\\Proyectos Eclipse\\PSP\\target";
-
-	private final static String rutaSourceJava = "C:\\Users\\alumno\\Desktop\\DAM\\Proyectos Eclipse\\PSP\\src\\main\\java";
+	 private final static String directorioGenerarClasses = "C:\\Users\\alumno\\Desktop\\sprint\\PSP\\target";
+	    private final static String rutaSourceJava = "C:\\Users\\alumno\\Desktop\\sprint\\PSP\\src\\main\\java";
 
 	public void ejecutaProcesoCompila() {
 
-		String[] comando = { "javac", "-d", directorioGenerarClasses, rutaSourceJava + "Gestiona.java"};
+		String[] comando = { "javac", "-d", directorioGenerarClasses, rutaSourceJava + "\\Gestiona.java"};
 
 		ProcessBuilder pb = new ProcessBuilder(comando);
 
 		try {
-
-
-
-			
-
 			pb.redirectErrorStream(true);
 
 			pb.inheritIO();
 
 			Process p1 = pb.start();
-
-			
-
-			
 
 		} catch (Exception e) { 			logger.error(e.getMessage()); 		}
 
