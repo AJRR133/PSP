@@ -8,7 +8,7 @@ public class LanzadorCalculaSuma {
 	private static final Logger logger = LogManager.getLogger(LanzadorCalculaSuma.class);
 
 	 private final static String directorioGenerarClasses = "C:\\Users\\alumno\\Desktop\\sprint\\PSP\\target";
-	    private final static String rutaSourceJava = "C:\\Users\\alumno\\Desktop\\sprint\\PSP\\src\\main\\java";
+	   private final static String rutaSourceJava = "C:\\Users\\alumno\\Desktop\\sprint\\PSP\\src\\main\\java";
 
 	public void ejecutaProcesoCompila() {
 

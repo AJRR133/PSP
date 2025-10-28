@@ -1,0 +1,29 @@
+2025-10-28 11:35:22.303 [main] DEBUG Unidad1.boletin2.LanzadorCalculaSuma - 2
+2025-10-28 12:00:31.018 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 10
+2025-10-28 12:00:31.021 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 20
+2025-10-28 12:00:31.025 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 25
+2025-10-28 12:00:31.029 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 30
+2025-10-28 12:00:31.032 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 35
+2025-10-28 12:00:31.032 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Todos los procesos hijos han sido lanzados.
+2025-10-28 12:01:46.565 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 10
+2025-10-28 12:01:46.570 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 20
+2025-10-28 12:01:46.574 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 25
+2025-10-28 12:01:46.577 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 30
+2025-10-28 12:01:46.580 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 35
+2025-10-28 12:01:46.581 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Todos los procesos hijos han sido lanzados.
+2025-10-28 12:03:02.511 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 10
+2025-10-28 12:03:02.518 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 20
+2025-10-28 12:03:02.520 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 25
+2025-10-28 12:03:02.524 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 30
+2025-10-28 12:03:02.528 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso hijo con umbral 35
+2025-10-28 12:03:02.528 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Todos los procesos hijos han sido lanzados.
+2025-10-28 12:05:03.448 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 10
+2025-10-28 12:05:03.453 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 20
+2025-10-28 12:05:03.456 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 25
+2025-10-28 12:05:03.460 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 30
+2025-10-28 12:05:03.463 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 35
+2025-10-28 12:05:30.243 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 10
+2025-10-28 12:05:30.248 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 20
+2025-10-28 12:05:30.251 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 25
+2025-10-28 12:05:30.253 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 30
+2025-10-28 12:05:30.257 [main] INFO  Unidad1.boletin2.LanzadorAnalisisTemperaturas - Lanzado proceso temp 35
