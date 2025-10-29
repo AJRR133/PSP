@@ -47,7 +47,6 @@ public class LanzadorAnalisisTemperaturas {
 		LanzadorAnalisisTemperaturas lanzador = new LanzadorAnalisisTemperaturas();
 		lanzador.compila();
 
-		// Fichero con las temperaturas (ajústalo según tu estructura)
 		String ficheroTemperaturas = "datos.txt";
 
 		int[] umbrales = { 10, 20, 25, 30, 35 };
