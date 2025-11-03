@@ -28,7 +28,8 @@ public class LanzadorSepararprovincias {
 	}
 	
 	public void ejecuta(String fichero, String provincia) {
-		String[] comando = { "java", "-cp", "target", "Unidad1.simulacro.Separarprovincias", fichero,
+		// sin el "classes en el target no funciona bien
+		String[] comando = { "java", "-cp", "target/classes", "Unidad1.simulacro.Separarprovincias", fichero,
 				provincia };
 
 		ProcessBuilder pb = new ProcessBuilder(comando);
@@ -48,13 +49,12 @@ public class LanzadorSepararprovincias {
 
 		String fichero = "pedidos.txt";
 
-		String[] provincias = { "Sevilla", "Cádiz","Almería", "Córdoba", "Jaén","Malaga","Huelva","Granada" };
+		String[] provincias = { "Sevilla", "Cádiz","Almería", "Córdoba", "Jaén","Málaga","Huelva","Granada" };
 
 		for (String u : provincias) {
 			lanzador.ejecuta(fichero,u);
 		}
-
-		// logger.info("Todos los procesos hijos han sido lanzados.");
+		
 	}
 
 	

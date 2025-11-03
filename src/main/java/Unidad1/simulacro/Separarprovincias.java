@@ -7,12 +7,15 @@ import java.util.List;
 
 public class Separarprovincias {
     private static final String rutar = "src/main/resources/";
+   
+	public Separarprovincias() {
+		super();
+	}
 
-    public Separarprovincias() {
-        super();
-    }
 
-    public List<String> devuelveArticulos(String ruta, String provincia) throws IOException {
+
+
+	public List<String> devuelveArticulos(String ruta, String provincia) throws IOException {
         List<String> lineas = new java.util.ArrayList<>();
         try (java.util.Scanner sc = new java.util.Scanner(new java.io.FileReader(ruta))) {
             if (sc.hasNextLine()) sc.nextLine();
@@ -20,7 +23,8 @@ public class Separarprovincias {
                 String linea = sc.nextLine();
                 if (linea.contains(provincia)) 
                 	lineas.add(linea);
-            }
+                
+                }
         }
         return lineas;
     }
@@ -43,6 +47,8 @@ public class Separarprovincias {
         List<String> lineas = s.devuelveArticulos(rutaEntrada, provincia);
         s.escribirFichero(rutaSalida, lineas);
 
-        System.out.println("Archivo generado correctamente: " + rutaSalida);
+        //System.out.println("Archivo generado correctamente: " + rutaSalida);
+  
+		System.out.println(provincia+":"+lineas.size());
     }
 }
