@@ -1,0 +1,4 @@
+Número total:
+DNIs: 6
+NSSs: 7
+Total: 13
