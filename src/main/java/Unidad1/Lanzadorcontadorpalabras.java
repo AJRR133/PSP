@@ -18,9 +18,9 @@ public class Lanzadorcontadorpalabras {
 		ProcessBuilder p2 = new ProcessBuilder(comando+"y");
 		ProcessBuilder p3 = new ProcessBuilder(comando+"java");
 		
-		try {
+		//try {
 			
-		}
+		//}
 		
 	}
 	
