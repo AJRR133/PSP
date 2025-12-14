@@ -1,9 +1,9 @@
-package Unidad2.simulacro1;
+package Unidad2.simulacro2;
 
-public class Coche   {
+public class Pieza {
     private int id;
 
-    public Coche(int id) {
+    public Pieza(int id) {
         this.id = id;
     }
 
