@@ -1,0 +1,36 @@
+package Unidad2.simulacro1;
+
+import java.util.concurrent.Semaphore;
+
+	public class TallerB {
+		private int cochesEsperando;
+		private final Semaphore semaforo;
+
+	public TallerB(int cochesEsperando,Semaphore semaforo) {
+		this.cochesEsperando = cochesEsperando;
+		this.semaforo = semaforo;
+	}
+
+	public void repararCoche(int tiempoReparacion, String nombreMecanico) {
+		try {
+			semaforo.acquire(); 
+			if (cochesEsperando > 0) {
+				int cocheActual = cochesEsperando;
+				System.out.println(nombreMecanico + " está reparando coche " + cocheActual );
+				Thread.sleep(tiempoReparacion * 1000);
+				cochesEsperando--;
+				System.out.println(nombreMecanico + " ha reparado coche " + cocheActual);
+						
+			}
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+			System.out.println(nombreMecanico + " fue interrumpido.");
+		} finally {
+			semaforo.release(); 
+		}
+	}
+
+	public boolean hayCoches() {
+		return cochesEsperando > 0;
+	}
+}

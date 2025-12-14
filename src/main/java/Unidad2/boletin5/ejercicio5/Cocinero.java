@@ -18,13 +18,13 @@ public class Cocinero implements Runnable{
 	public void run() {
 			try {
 			
-			System.out.println(Thread.currentThread().getName() + " esta cocinando");
+			System.out.println(nombre + " esta cocinando");
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} finally {
-			System.out.println(Thread.currentThread().getName() + " termina de cocinar");
-			semaforo.release();
+			System.out.println(nombre + " termina de cocinar");
+			semaforo.release(3);
 		}}
 
 }

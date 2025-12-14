@@ -21,12 +21,12 @@ public class Gestionarestaurante {
 			e.printStackTrace();
 		}
 		
-		Cocinero cocinero = new Cocinero("cocinero",semaforo );
-		Thread cocinerohilo = new Thread(cocinero);
+		//Cocinero cocinero = new Cocinero("cocinero",semaforo );
+		//Thread cocinerohilo = new Thread(cocinero);
+	    Thread cocinero = new Thread(new Cocinero("cocinero",semaforo));
 		
-		
-		hilos.add(cocinerohilo);
-		for(int i = 0; i < 3; i++)
+	    hilos.add(cocinero);
+		for(int i = 0; i < numHilos; i++)
 		{
 			Comensal comensal = new Comensal("comensal"+i,semaforo);
 			Thread comensalhilo = new Thread(comensal);

@@ -16,8 +16,8 @@ public class Comensal implements Runnable {
 	@Override
 	public void run() {
 		try {
-			semaforo.acquire(3);
-			System.out.println(Thread.currentThread().getName() + " esta comiendo");
+			semaforo.acquire();
+			System.out.println(nombre + " esta comiendo");
 			
 		} catch (InterruptedException e) {
 			e.printStackTrace();
