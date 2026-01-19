@@ -1,4 +1,4 @@
-package Unidad3.Boletin1.ejercicio3;
+package Unidad3.Boletin1.ejercicio4;
 
 import java.io.PrintWriter;
 import java.net.ServerSocket;
@@ -11,9 +11,10 @@ public class Servidor {
 
         try (ServerSocket servidor = new ServerSocket(puerto)) {
             System.out.println("Servidor escuchando en el puerto " + puerto);
-
+            String numclientes = args[0];
+            int num = Integer.parseInt(numclientes);
            
-            for (int i = 1; i <= 3; i++) {
+            for (int i = 1; i <= num; i++) {
                 Socket cliente = servidor.accept();
                 System.out.println("Cliente conectado");
 
