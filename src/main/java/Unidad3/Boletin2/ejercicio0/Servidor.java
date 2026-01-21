@@ -14,10 +14,10 @@ public class Servidor {
 	            while (true) {
 	                // 1. Espera a un cliente
 	                Socket socketCliente = servidor.accept();
-	                System.out.println("Nuevo cliente conectado: " + socketCliente.getInetAddress());
+	                System.out.println("Nuevo cliente conectado: " + socketCliente.getPort());
 	                // 2. Lanza un hilo nuevo para este cliente específico
 	                // Esto permite que el bucle vuelva al accept() inmediatamente
-	                new ManejadorHilosCliente(socketCliente).start();
+	                new ManejadorHilosServidor(socketCliente).start();
 	            }
 	        } catch (IOException e) {
 	            System.err.println("Error en el servidor: " + e.getMessage());

@@ -6,11 +6,11 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
-public class ManejadorHilosCliente extends Thread {
+public class ManejadorHilosServidor extends Thread {
 
 	Socket socket = new Socket();
 
-	public ManejadorHilosCliente(Socket socket) {
+	public ManejadorHilosServidor(Socket socket) {
 		super();
 		this.socket = socket;
 	} 
@@ -20,17 +20,16 @@ public class ManejadorHilosCliente extends Thread {
 		try {
 			entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			PrintWriter salida = new PrintWriter(socket.getOutputStream(), true);
-			salida.println("Conexion establecidad con : ");
+			salida.println("Conexion establecidad con : "+ this.socket.getPort());
 			String mensaje;
-			while ((mensaje = entrada.readLine()) != null && !mensaje.equalsIgnoreCase("fin")) {
-					System.out.println("Cliente dice: " + mensaje);
-					salida.println("Servidor responde: " + mensaje.toUpperCase());
-			}
-			if (mensaje != null && mensaje.equalsIgnoreCase("fin")) {
-				salida.println("Cerrando sesión. ¡Hasta pronto!"); 			
-		}
-
+			Thread.sleep(5000);
+			System.out.println("conexion finalizada");
+			  
+			
 		}catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
