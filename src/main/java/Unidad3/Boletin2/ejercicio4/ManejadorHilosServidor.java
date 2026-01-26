@@ -1,4 +1,4 @@
-package Unidad3.Boletin2.ejercicio1;
+package Unidad3.Boletin2.ejercicio4;
 
 import java.io.*;
 import java.net.Socket;
@@ -13,19 +13,17 @@ public class ManejadorHilosServidor extends Thread {
 
     @Override
     public void run() {
+        String infoCliente = "IP=" + socket.getInetAddress().getHostAddress() + ", Puerto=" + socket.getPort();
         try (BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter salida = new PrintWriter(socket.getOutputStream(), true)) {
-
-            String mensaje = entrada.readLine();
-            while ((mensaje) != null) {
-                salida.println("ECO:" + mensaje);
-               // mensaje = entrada.readLine();
+        	{
+        		
+                salida.println("Eres el cliente " );
             }
 
         } catch (IOException e) {
-        	
         } finally {
-            System.out.println("DESCONEXIÓN: " + new Date() + " Puerto: " + socket.getPort());
+            System.out.println("cliente desconenctado: " + infoCliente + " " + new Date() );
             try {
                 socket.close();
             } catch (IOException e) {
