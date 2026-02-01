@@ -30,3 +30,31 @@ public class ServidorPremios {
         }
     }
 }
+
+/**
+ * * 1. RECURSO COMPARTIDO:
+ * - Usar 'ConcurrentHashMap' para evitar 'ConcurrentModificationException'.
+ * - Es Thread-Safe: permite que varios hilos borren/metan datos a la vez.
+ * * 2. MÉTODOS CLAVE DEL MAPA:
+ * - V remove(key): Elimina la clave y devuelve el valor. 
+ * ¡IMPORTANTE! Si devuelve null, el elemento no existía o ya fue borrado por otro hilo.
+ * - boolean containsKey(key): Solo chequea si existe (sin borrar).
+ * - V put(key, value): Inserta o actualiza.
+ * - boolean isEmpty(): Útil para saber si ya se acabaron los premios/datos.
+ * * 3. ARQUITECTURA:
+ * - Servidor: Bucle infinito con servidor.accept().
+ * - Manejador (Thread): Recibe el Socket y el Mapa (static o por constructor).
+ * - Cliente: Usa BufferedReader (entrada) y PrintWriter (salida, con true para autoflush).
+ * * 4. DETALLES DE RED (Para logs):
+ * - socket.getInetAddress().getHostAddress() -> Obtiene la IP del cliente.
+ * - socket.getPort() -> Obtiene el puerto remoto.
+ * * 5. REQUISITO EXAMEN (Ejercicio 4/5): 
+ * - Si un hilo modifica el mapa, el cambio es visible para todos los hilos 
+ * inmediatamente[cite: 43, 46].
+ Métodos Vitales:
+ * - map.remove(key): Recupera y borra (ideal para premios únicos)[cite: 47, 62].
+ * - map.put(key, val): Inserta o actualiza datos compartidos[cite: 41].
+ * - map.get(key): Consulta sin borrar.
+ * - map.isEmpty(): Para saber si el juego/inventario terminó[cite: 60].
+ *
+ */

@@ -22,6 +22,11 @@ public class ManejadorHilosServidor extends Thread {
         		
                 salida.println("Eres el cliente " + contador.getContador());
                 contador.setContador(contador.getContador()+1);
+                /*try {
+					Thread.sleep(5000);
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					*/
             }
 
         } catch (IOException e) {
